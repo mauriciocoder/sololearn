@@ -32,3 +32,8 @@ for line in file:
     print(line.strip())
 file.close()
 
+## you can work with a file, without having to worry about not closing it
+with open(filename) as file:
+    print('Printing without having to close!!!')
+    print(file.read())
+
