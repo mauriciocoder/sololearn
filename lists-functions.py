@@ -28,3 +28,30 @@ print(range(10) == range(0, 10))
 
 ## You can also set the increment ratio
 print(list(range(0, 100, 10)))
+
+## You can slice a list
+values = [1, 2, 3, 4]
+print(values[1:3])  ## Fixed limit
+print(values[1:])  ## From 1 to end
+print(values[:2])  ## From start to 2
+
+## You can also set a step
+print(values[::2])
+print(values[::3])
+
+## When negative values are used for the first and second values in a slice (or a normal index), they count from the end of the list.
+print(values[:-1])
+
+## When the step is negative, you are reversing the list
+print(values[::-1])
+
+## You can create lists using list comprehension
+nums = [i * 2 for i in range(10)]
+print(nums)
+
+## You can also set a condition to enforce the comprehension
+nums = [i * 2 for i in range(10) if i % 2 == 0]
+print(nums)
+
+
+
