@@ -53,5 +53,17 @@ print(nums)
 nums = [i * 2 for i in range(10) if i % 2 == 0]
 print(nums)
 
+## You can use some resources like, all, any and enumeration
+nums = [1, 2, 3, 4]
+if all([i > 0 for i in nums]):
+    print('every num is positive')
+
+nums.append(-1)
+if any([i < 0 for i in nums]):
+    print('at least one is negative')
+
+## In enumerate you can get both the index and the value
+for v in enumerate(nums):
+    print(v)
 
 
